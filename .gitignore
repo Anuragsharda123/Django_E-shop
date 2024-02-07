@@ -4,3 +4,6 @@
 /kapde/templatetags/__pycache__
 /kapde/views/__pycache__
 /venv
+/db.sqlite3
+/dukan/__pycache__
+db.sqlite3
