@@ -4,7 +4,8 @@ from .product import Product
 
 from .customer import Customer
 
-from datetime import datetime
+# from datetime import datetime
+from django.utils import timezone
 
 
 class Order(models.Model):
@@ -14,7 +15,7 @@ class Order(models.Model):
     price = models.IntegerField()
     address = models.CharField(max_length=500, default='', blank=True)
     city = models.CharField(max_length=50, default='', blank=True)
-    date = models.DateField(default= datetime.today())
+    date = models.DateField(default= timezone.now())
     status = models.BooleanField(default=False)
 
 
